@@ -1,0 +1,224 @@
+:root {
+    /* Tema Escuro */
+    --background-color: #000814;
+    --background-second-color: #212529;
+
+    /* Tema Claro */
+    --background-color-light: #f9f7f3;
+    --background-second-light: #f0ebd8;
+
+    /* Temas spans */
+    --color-tema-01: #7209b7;
+    --color-tema-02: #70e000;
+    --color-tema-03: #00f5d4;
+    --color-tema-04: #da1e37;
+    --color-tema-05: #072ac8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    overflow-x: hidden ;
+}
+
+/* BARRA LATERAL MENU */
+
+.nav-side{
+    background-color: var(--background-second-color);
+    width: 80px;
+    height: 100vh;
+    padding-top: 40px;
+    border-right: 2px solid var(--color-tema-03);
+    position: fixed;
+    transition: all 300ms ease-in-out;
+    overflow: hidden;
+}
+.nav-side.expand{
+    width: 300px;
+}
+
+.btn-expand{
+    width: 100%;
+}
+
+.btn-expand img{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.active{
+    background-color: var(--background-color);
+}
+
+ul li.icon-menu a {
+    color: var(--color-tema-03);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.icon-menu a .txt-link{
+    margin-left: 100px;
+    transition: all 800ms ease-in-out;
+    opacity: 0;
+}
+
+.nav-side.expand .txt-link{
+    margin-left: 50px;
+    opacity: 1;
+}
+
+ul li.icon-menu a .icon i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+li:hover{
+    background-color: var(--background-color);
+}
+
+ul li.icon-menu{
+    transition: all 100ms ease-in-out;
+}
+
+/* TEMAS */
+
+.nav-theme{
+    position: absolute;
+    top: 300px;
+    right: 20px;
+}
+.nav-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+}
+
+.nav-theme .btn-colors,
+span a{
+    background-color: var(--color-tema-03);
+    color: var(--background-second-color);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.nav-theme .btn-colors{
+    font-size: 25px;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    transform: rotate(-225deg);
+}
+.nav-theme .btn-colors:hover{
+    background-color:#b2f7fecb;
+}
+.nav-theme.open .btn-colors{
+    transform: rotate(0deg);
+}
+
+.purple{
+    background-color: var(--color-tema-01);
+    border: 0.3px solid var(--color-tema-03);
+}
+.blue{
+    background-color: var(--color-tema-05);
+    border: 0.3px solid var(--color-tema-03);
+
+}
+.green{
+    background-color: var(--color-tema-02);
+    border: 0.3px solid var(--color-tema-03);
+}
+
+.nav-theme span a{
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+.nav-theme span a i{
+    font-size: 20px;
+}
+.nav-theme span{
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    transform: translateY(0px);
+    opacity: 0;
+}
+
+.nav-theme.open span {
+    transform: rotate(calc(var(--i) * (360deg/8))) translateY(80px);
+    opacity: 1;
+}
+
+.nav-theme span a:hover{
+    transform: scale(1.1);
+}
+
+
+/* SEÇAO BOAS VINDAS */
+
+.aligment-sections{
+    margin: 0 auto;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.welcome h1{
+    color: var(--background-color-light);
+    font-size: 70px;
+    max-width:1000px;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.welcome .get-theme{
+    color: var(--color-tema-03);
+}
+
+.next-page i{
+    color: var(--color-tema-03);
+    font-size: 40px;
+    position: absolute;
+    top: 800px;
+    animation: rotate-self 300ms ease-in-out alternate infinite;
+}
+
+@keyframes rotate-self {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+} 
