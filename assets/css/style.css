@@ -15,25 +15,53 @@
     --color-tema-05: #072ac8;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    height: 100vh;
+
+main {
     background-color: var(--background-color);
+    height: 100%;
+    width: 100vw;
 }
 
-html{
+html {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    overflow-x: hidden ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--background-color-light);
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+/* MIDIAS SOCIAIS */ 
+aside div  figure{
+    display: flex;
+    flex-direction: column;
+    max-width: 63px;
+    border-radius: 40px;
+    padding: 10px;
+    position: fixed;
+    top: 750px;
+    right: 10px;
+    background-color: rgba(164, 164, 164, 0.213);
+}
+aside div  figure img{
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+aside div  figure img:hover{
+transform: scale(1.1);
 }
 
 /* BARRA LATERAL MENU */
 
-.nav-side{
+.nav-side {
     background-color: var(--background-second-color);
     width: 80px;
     height: 100vh;
@@ -42,28 +70,31 @@ html{
     position: fixed;
     transition: all 300ms ease-in-out;
     overflow: hidden;
-}
-.nav-side.expand{
-    width: 300px;
+    z-index: 10;
 }
 
-.btn-expand{
+.nav-side.expand {
+    width: 300px;
+    box-shadow: 900px 0px 800px 900px rgba(0, 0, 0, 0.8);
+}
+
+.btn-expand {
     width: 100%;
 }
 
-.btn-expand img{
+.btn-expand img {
     width: 50px;
     cursor: pointer;
     margin-left: 15px;
     margin-bottom: 20px;
 }
 
-ul{
+ul {
     height: 100%;
     list-style-type: none;
 }
 
-ul li.active{
+ul li.active {
     background-color: var(--background-color);
 }
 
@@ -77,38 +108,39 @@ ul li.icon-menu a {
     line-height: 30px;
 }
 
-ul li.icon-menu a .txt-link{
+ul li.icon-menu a .txt-link {
     margin-left: 100px;
     transition: all 800ms ease-in-out;
     opacity: 0;
 }
 
-.nav-side.expand .txt-link{
+.nav-side.expand .txt-link {
     margin-left: 50px;
     opacity: 1;
 }
 
-ul li.icon-menu a .icon i{
+ul li.icon-menu a .icon i {
     font-size: 25px;
     margin-left: 20px;
 }
 
-li:hover{
+li:hover {
     background-color: var(--background-color);
 }
 
-ul li.icon-menu{
+ul li.icon-menu {
     transition: all 100ms ease-in-out;
 }
 
 /* TEMAS */
 
-.nav-theme{
-    position: absolute;
+.nav-theme {
+    position: fixed;
     top: 300px;
     right: 20px;
 }
-.nav-theme{
+
+.nav-theme {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +148,7 @@ ul li.icon-menu{
 }
 
 .nav-theme .btn-colors,
-span a{
+span a {
     background-color: var(--color-tema-03);
     color: var(--background-second-color);
     height: 45px;
@@ -127,43 +159,49 @@ span a{
     border-radius: 50%;
 }
 
-.nav-theme .btn-colors{
+.nav-theme .btn-colors {
     font-size: 25px;
     z-index: 10;
     cursor: pointer;
     transition: all 300ms ease-in-out;
     transform: rotate(-225deg);
 }
-.nav-theme .btn-colors:hover{
-    background-color:#b2f7fecb;
+
+.nav-theme .btn-colors:hover {
+    background-color: #b2f7fecb;
 }
-.nav-theme.open .btn-colors{
+
+.nav-theme.open .btn-colors {
     transform: rotate(0deg);
 }
 
-.purple{
+.purple {
     background-color: var(--color-tema-01);
     border: 0.3px solid var(--color-tema-03);
 }
-.blue{
+
+.blue {
     background-color: var(--color-tema-05);
     border: 0.3px solid var(--color-tema-03);
 
 }
-.green{
+
+.green {
     background-color: var(--color-tema-02);
     border: 0.3px solid var(--color-tema-03);
 }
 
-.nav-theme span a{
+.nav-theme span a {
     text-decoration: none;
     transition: all 300ms ease-in-out;
 }
-.nav-theme span a i{
+
+.nav-theme span a i {
     font-size: 20px;
 }
-.nav-theme span{
-    position: absolute;
+
+.nav-theme span {
+    position: fixed;
     transition: all 300ms ease-in-out;
     transform: translateY(0px);
     opacity: 0;
@@ -174,41 +212,44 @@ span a{
     opacity: 1;
 }
 
-.nav-theme span a:hover{
+.nav-theme span a:hover {
     transform: scale(1.1);
 }
 
 
 /* SEÇAO BOAS VINDAS */
 
-.aligment-sections{
+.aligment-sections {
     margin: 0 auto;
+    height: 100vh;
 }
 
-.welcome{
+.welcome {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     flex-direction: column;
 }
 
-.welcome h1{
+.welcome h1 {
     color: var(--background-color-light);
     font-size: 70px;
-    max-width:1000px;
+    max-width: 1000px;
     width: 100%;
     margin-top: -100px;
 }
 
-.welcome .get-theme{
+.get-theme {
     color: var(--color-tema-03);
 }
 
-.next-page i{
+.next-page i {
     color: var(--color-tema-03);
     font-size: 40px;
     position: absolute;
+    align-items: center;
+    width: 100%;
+    margin-left: -15px;
     top: 800px;
     animation: rotate-self 300ms ease-in-out alternate infinite;
 }
@@ -221,4 +262,195 @@ span a{
     100% {
         transform: translateY(0px);
     }
-} 
+}
+
+/* SEÇÃO SOBRE MIM */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.information {
+    height: 80%;
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid var(--color-tema-03);
+}
+
+.my-profile {
+    background-color: var(--background-second-color);
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-profile {
+    background-image: url(/assets/img/foto-perfil.JPG);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px var(--background-color);
+}
+
+.information-about-me {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.information-about-me h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.information-about-me h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.information-about-me p {
+    max-width: 640px;
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+}
+
+.information-about-me footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.information-about-me footer .btn-curriculum {
+    width: 100%;
+    max-width: 180px;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: var(--color-tema-03);
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color-light);
+    box-shadow: 0px 0px 5px var(--background-color-light);
+    transition: 300ms;
+}
+
+.information-about-me footer .btn-curriculum:hover {
+    background-color: #a1fff2;
+    color: #65a0ae;
+}
+
+p.phrase,
+.phrase .get-theme {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.information-about-me ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.information-about-me li:before {
+    content: "\2022";
+    color: var(--color-tema-03);
+}
+
+.information-about-me li {
+    margin-top: 5px;
+}
+
+.information-about-me .leisure {
+    font-size: 17px;
+}
+
+/* MINHAS HABILIDADES */
+
+.skills h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.information-skill {
+    height: 50%;
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 1250px;
+    border-radius: 50px;
+    padding: 90px 60px 0px 60px;
+    border: 2px solid var(--color-tema-03);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill-bar {
+    height: 14px;
+    background-color: var(--background-second-color);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 550px;
+    position: absolute;
+}
+
+.skill-per {
+    height: 14px;
+    background-color: var(--color-tema-03);
+    border-radius: 20px;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    background-color: var(--background-color-light);
+    color: var(--background-color);
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 5px;
+    top: -43px;
+    right: -15.8px;
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--background-color-light);
+    top: -26px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
+

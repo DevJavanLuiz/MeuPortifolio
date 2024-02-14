@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,15 @@
 
 <body>
     <main>
+        <aside>
+            <div>
+                <figure>
+                    <a href=""><img src="./assets/img/icons8-linkedin-48.png" alt=""></a>
+                    <a href=""><img src="./assets/img/icons8-github-64.png" alt=""></a>
+                    <a href=""><img src="./assets/img/icons8-instagram-48.png" alt=""></a>
+                </figure>
+            </div>
+        </aside>
         <header>
             <nav class="nav-side">
                 <div class="btn-expand">
@@ -29,19 +38,19 @@
                 </div>
                 <ul>
                     <li class="icon-menu">
-                        <a href="#">
+                        <a href="#home">
                             <span class="icon"><i class="bi bi-house-door-fill"></i></span>
                             <span class="txt-link">Home</span>
                         </a>
                     </li>
                     <li class="icon-menu">
-                        <a href="#">
+                        <a href="#about">
                             <span class="icon"><i class="bi bi-person-circle"></i></span>
                             <span class="txt-link">Sobre</span>
                         </a>
                     </li>
                     <li class="icon-menu">
-                        <a href="#">
+                        <a href="#skills">
                             <span class="icon"><i class="bi bi-keyboard"></i></span>
                             <span class="txt-link">Habilidades</span>
                         </a>
@@ -73,12 +82,79 @@
             <span style="--i:5;"><a href="" class="green"></a></span>
         </div>
 
-        <section class="welcome aligment-sections">
+        <section class="welcome aligment-sections" id="home">
             <h1>Olá, seja bem-vinda(o) ao meu <span class="get-theme">Portifólio</span>!</h1>
 
-            <div class="next-page"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
+            <div class="next-page"><a href="#about"><i class="bi bi-chevron-down"></i></a></div>
         </section>
 
+        <section class="about-me aligment-sections " id="about">
+            <h1> <span class="get-theme">Sobre</span> mim</h1>
+            <div class="information">
+                <div class="my-profile">
+                    <div class="img-profile"></div>
+                </div>
+                <div class="information-about-me">
+                    <h1>Olá, me chamo <span class="get-theme">Javan Luiz</span>!</h1>
+                    <h2>Desenvolvedor <span class="get-theme ">Front-End</span></h2>
+                    <p>Apaixonado em transformar ideias em realidade. Desde 2023 me encontrei na área da Tecnológia.
+                        Estou em busca constantemente de proporcionar experiências memoráveis para usuários.
+                    </p>
+                    <p class="phrase"><span class="get-theme "> “A necessidade é a mãe da inovação.”</span> Platão</p>
+                    <br>
+                    <ul>
+                        <li>Ánalise e desenvolvimento de sistemas <span class="get-theme"> 2023 / Dez 2024</span></li>
+                        <li>Informática</li>
+                        <li>Inglês (básico)</li>
+                        <li>Operador de mídias sociais</li>
+                        <li>Gestão empresarial</li>
+                    </ul>
+                    <footer>
+                        <a href="" class="btn-curriculum">Download Cv</a>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <section class="skills aligment-sections" id="skills">
+            <h1>Minhas <span class="get-theme">Habilidades</span></h1>
+            <div class="information-skill">
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-html-48.png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-css-48(1).png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="72%" style="max-width: 72%;"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-atrevimento-48.png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="43%" style="max-width: 43%;"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-javascript-48.png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-git-48.png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="68%" style="max-width: 68%;"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><img src="./assets/img/icons8-figma-48.png" alt=""></div>
+                    <div class="skill-bar"></div>
+                    <div class="skill-per" per="45%" style="max-width: 45%;"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
