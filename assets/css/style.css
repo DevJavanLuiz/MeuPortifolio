@@ -11,7 +11,7 @@
     --color-tema-01: #7209b7;
     --color-tema-02: #70e000;
     --color-tema-03: #00f5d4;
-    --color-tema-04: #da1e37;
+    --color-tema-04: #da891e;
     --color-tema-05: #072ac8;
 }
 
@@ -34,9 +34,6 @@ html {
     scroll-behavior: smooth;
     color: var(--background-color-light);
 }
-::-webkit-scrollbar-thumb{
-    background-color: red;
-}
 
 /* MIDIAS SOCIAIS */ 
 aside div  figure{
@@ -57,6 +54,16 @@ aside div  figure img{
 }
 aside div  figure img:hover{
 transform: scale(1.1);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-tema-03);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--background-second-color);
+    width: 15px;
 }
 
 /* BARRA LATERAL MENU */
@@ -149,7 +156,7 @@ ul li.icon-menu {
 
 .nav-theme .btn-colors,
 span a {
-    background-color: var(--color-tema-03);
+    background-color: rgba(191, 191, 191, 0.622);
     color: var(--background-second-color);
     height: 45px;
     width: 45px;
@@ -173,22 +180,6 @@ span a {
 
 .nav-theme.open .btn-colors {
     transform: rotate(0deg);
-}
-
-.purple {
-    background-color: var(--color-tema-01);
-    border: 0.3px solid var(--color-tema-03);
-}
-
-.blue {
-    background-color: var(--color-tema-05);
-    border: 0.3px solid var(--color-tema-03);
-
-}
-
-.green {
-    background-color: var(--color-tema-02);
-    border: 0.3px solid var(--color-tema-03);
 }
 
 .nav-theme span a {
@@ -454,3 +445,21 @@ p.phrase,
     transform: translateX(50%) rotate(45deg);
 }
 
+.text-skills { 
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+.text-skills p{
+    max-width: 400px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 60px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.text-skills img{
+    width: 40px;
+    margin-left: -43px;
+}
