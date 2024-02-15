@@ -35,8 +35,8 @@ html {
     color: var(--background-color-light);
 }
 
-/* MIDIAS SOCIAIS */ 
-aside div  figure{
+/* MIDIAS SOCIAIS */
+aside div figure {
     display: flex;
     flex-direction: column;
     max-width: 63px;
@@ -47,21 +47,23 @@ aside div  figure{
     right: 10px;
     background-color: rgba(164, 164, 164, 0.213);
 }
-aside div  figure img{
-    width: 40px;
+
+aside div figure img {
+    width: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-aside div  figure img:hover{
-transform: scale(1.1);
+
+aside div figure img:hover {
+    transform: scale(1.1);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: var(--color-tema-03);
     border-radius: 20px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: var(--background-second-color);
     width: 15px;
 }
@@ -156,8 +158,8 @@ ul li.icon-menu {
 
 .nav-theme .btn-colors,
 span a {
-    background-color: rgba(191, 191, 191, 0.622);
-    color: var(--background-second-color);
+    background-color: rgba(255, 255, 255, 0.213);
+    color: var(--background-color);
     height: 45px;
     width: 45px;
     display: flex;
@@ -382,6 +384,7 @@ p.phrase,
     font-size: 60px;
     margin-bottom: 10px;
 }
+
 .skills {
     display: flex;
     justify-content: center;
@@ -445,13 +448,14 @@ p.phrase,
     transform: translateX(50%) rotate(45deg);
 }
 
-.text-skills { 
+.text-skills {
     display: grid;
     flex-direction: column;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 20px;
 }
-.text-skills p{
+
+.text-skills p {
     max-width: 400px;
     font-size: 18px;
     font-weight: 400;
@@ -459,7 +463,86 @@ p.phrase,
     margin-top: 7px;
     margin-bottom: 7px;
 }
-.text-skills img{
+
+.text-skills img {
     width: 40px;
     margin-left: -43px;
 }
+
+
+/* SEÇÃO PROJETOS */
+
+.myprojects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 140vh;
+}
+.myprojects h1{
+    font-size: 60px;
+    margin-bottom:20px ;
+}
+.myprojects h2{
+    text-align: center;
+}
+
+.grid-projects {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.project {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 30px;
+    display: flex;
+    background-color: var(--background-second-color);
+    padding: 10px;
+}
+
+.grid-projects .project p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.grid-projects .project img {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.aligment-skill {
+    display: grid;
+    flex-direction: column;
+}
+
+
+.aligment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: -70px;
+}
+
+
+.grid-projects .project a i {
+    font-size: 40px;
+    color: var(--background-color); 
+    transition: all 300ms ease-in-out;
+}
+
+.skill-used img{
+    transition: all 300ms ease-in-out;
+    height: 90px;
+}
+.skill-used img:hover{
+   transform: rotateY(360deg);
+}
+
