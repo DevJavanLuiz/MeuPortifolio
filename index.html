@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="icon-menu">
-                        <a href="#">
+                        <a href="#contact">
                             <span class="icon"><i class="bi bi-telephone-plus-fill"></i></span>
                             <span class="txt-link">Contato</span>
                         </a>
@@ -97,6 +97,7 @@
                 <div class="information-about-me">
                     <h1>Olá, me chamo <span class="get-theme">Javan Luiz</span>!</h1>
                     <h2>Desenvolvedor <span class="get-theme ">Front-End</span></h2>
+                    <p><span class="get-theme "> Nascido no dia 07/03/2003 </span></p>
                     <p>Apaixonado em transformar ideias em realidade. Desde 2023 me encontrei na área da Tecnológia.
                         Estou em busca constantemente de proporcionar experiências memoráveis para usuários.
                     </p>
@@ -233,11 +234,28 @@
                 
             </div>
         </section>
+        <section class="contact-me aligment-sections " id="contact">
+            <h1>Entre em <span class="get-theme">contato</span></h1>
+
+            <form action="">
+                <label for="name">Nome: </label>
+                <input type="text" name="email" id="name">
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email">
+                <label for="assunto">Comentario:</label>
+                <textarea name="assunto" 
+               maxlength="120" id="assunto" ></textarea>
+               <button type="submit" >Enviar</button>
+            </form>
+
+        </section>
     </main>
     
     
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/themes.js"></script>
+    <script src="./assets/js/uppercase.js"></script>
 </body>
 
 </html>

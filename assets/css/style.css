@@ -492,7 +492,7 @@ p.phrase,
     display: grid;
     flex-direction: column;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 15px;
 }
 
 .project {
@@ -502,6 +502,8 @@ p.phrase,
     display: flex;
     background-color: var(--background-second-color);
     padding: 10px;
+    border: 1px solid var(--color-tema-03);
+    /* box-shadow: 0 0 5px var(--color-tema-03) */
 }
 
 .grid-projects .project p {
@@ -546,3 +548,79 @@ p.phrase,
    transform: rotateY(360deg);
 }
 
+.contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.contact-me h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+form{
+    display: grid;
+}
+form label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--color-tema-03);
+}
+form label:hover{
+    color: #a1fff2;
+}
+form input {
+    width: 600px;
+    height: 50px;
+    font-size: 19px;
+    padding-left: 20px;
+    border-radius: 50px;
+    border: 0;
+    font-weight: 400;
+}
+form input:focus {
+    outline: none; /* Remove a borda padrão de foco (opcional) */
+      box-shadow: 0 0 20px var(--color-tema-03);
+}
+form textarea {
+    width: 600px;
+    height: 300px;
+    font-size: 20px;
+    padding: 50px;
+    border-radius: 50px;
+    border: 0;
+    font-weight: 400;
+}
+#name{
+        text-transform: capitalize;
+}
+form textarea:focus {
+    outline: none; /* Remove a borda padrão de foco (opcional) */
+      box-shadow: 0 0 20px var(--color-tema-03);
+}
+
+form button {
+    width: 100%;
+    max-width: 180px;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: var(--color-tema-03);
+    border-radius: 40px;
+    text-align: center;
+    border: 0;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--background-color-light);
+    box-shadow: 0px 0px 5px var(--background-color-light);
+    transition: 300ms;
+}
+
+form button:hover {
+    background-color: #a1fff2;
+    color: #65a0ae;
+}
