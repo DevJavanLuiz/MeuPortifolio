@@ -25,9 +25,19 @@
         <aside>
             <div>
                 <figure>
-                    <a href=""><img src="./assets/img/icons8-linkedin-logo-48.png" alt=""></a>
-                    <a href=""><img src="./assets/img/icons8-github-48.png" alt=""></a>
-                    <a href=""><img src="./assets/img/icons8-whatsapp-48(1).png" alt=""></a>
+                    <a href="" class="tooltip">
+                        <img src="./assets/img/icons8-linkedin-logo-48.png" alt="">
+                        <span class="tooltiptext">LinkedIn</span>
+                      </a>
+                      <a href="" class="tooltip">
+                        <img src="./assets/img/icons8-github-48.png" alt="">
+                        <span class="tooltiptext">GitHub</span>
+                      </a>
+                
+                      <a href="" class="tooltip">
+                        <img src="./assets/img/icons8-whatsapp-48(1).png" alt="">
+                        <span class="tooltiptext">WhatsApp</span>
+                      </a>
                 </figure>
             </div>
         </aside>
@@ -72,9 +82,11 @@
 
         </header>
         <div class="nav-theme">
-            <div class="btn-colors">
-                <i class="bi bi-palette-fill"></i>
+            <div class="btn-colors tooltip">
+              <i class="bi bi-palette-fill"></i>
+              <span class="tooltiptext">Tema</span>
             </div>
+          
             <span style="--i:1;"><a href="" class="morning"><i class="bi bi-brightness-high-fill"></i></a></span>
             <span style="--i:2;"><a href="" class="nigth"><i class="bi bi-moon-stars-fill"></i></a></span>
             <span style="--i:3;"><a href="" class="purple"><img src="./assets/img/icons8-ponto-final-50(1).png" alt=""></a></span>
@@ -82,13 +94,13 @@
             <span style="--i:5;"><a href="" class="orange"><img src="./assets/img/icons8-ponto-final-50(2).png" alt=""></a></span>
         </div>
 
-        <section class="welcome aligment-sections" id="home">
+        <section class="welcome aligment-sections hidden" id="home">
             <h1>Olá, seja bem-vinda(o) ao meu <span class="get-theme">Portifólio</span>!</h1>
 
             <div class="next-page"><a href="#about"><i class="bi bi-chevron-down"></i></a></div>
         </section>
 
-        <section class="about-me aligment-sections " id="about">
+        <section class="about-me aligment-sections hidden " id="about">
             <h1> <span class="get-theme">Sobre</span> mim</h1>
             <div class="information">
                 <div class="my-profile">
@@ -101,6 +113,7 @@
                     <p>Apaixonado em transformar ideias em realidade. Desde 2023 me encontrei na área da Tecnológia.
                         Estou em busca constantemente de proporcionar experiências memoráveis para usuários.
                     </p>
+             
                     <p class="phrase"><span class="get-theme "> “A necessidade é a mãe da inovação.”</span> Platão</p>
                     <br>
                     <ul>
@@ -116,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills aligment-sections" id="skills">
+        <section class="skills aligment-sections hidden" id="skills">
             <h1>Minhas <span class="get-theme">Habilidades</span></h1>
             <div class="information-skill">
                 <div class="skill">
@@ -155,6 +168,7 @@
                     <div class="skill-per" per="45%" style="max-width: 45%;"></div>
                 </div>
             </div>
+            <div class="hidden">
             <div class="text-skills">
                 <p><img src="./assets/img/icons8-html-48.png" alt=""> HTML<span class="get-theme"> é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. </span></p>
 
@@ -168,10 +182,12 @@
                 
                 <p><img src="./assets/img/icons8-figma-48.png" alt=""><span class="get-theme"> Figma </span>é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.</p>
             </div>
+        </div>
         </section>
-        <section class="myprojects aligment-sections " id="projects">
+        <section class="myprojects aligment-sections hidden " id="projects">
             <h1>Meus <span class="get-theme">Projetos</span></h1>
             <div class="grid-projects">
+                <div class="hidden">
                 <div class="project">
 
                     <div class="aligment-skill">
@@ -188,12 +204,15 @@
                     <a href="" class="open-project"><i class="bi bi-play-fill"></i></a>
                 </div>
                 </div>
+            </div>
 
+            <div class="hiiden">
                 <div class="project">
                     <div class="aligment-skill">
                     <img src="./assets/img/cronometo.png" alt="">
                     <h2>Projeto <span class="get-theme">Calculadora</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis doloribus eveniet similique possimus totam voluptas labore.</p>
+                    
                     <div class="skill-used">
                         <img style="width: 90px ;" src="./assets/img/icons8-html-48.png" alt="">
                         <img  style="width: 90px; margin-left: -40px;" src="./assets/img/icons8-css-48(1).png" alt="">
@@ -205,6 +224,9 @@
                     <a href="" class="open-project"><i class="bi bi-play-fill"></i></a>
                 </div>
                 </div>
+            </div>
+
+            <div class="hidden">
                 <div class="project">
                     <div class="aligment-skill">
                     <img src="./assets/img/cronometro real.png" alt="">
@@ -221,6 +243,9 @@
                     <a href="" class="open-project"><i class="bi bi-play-fill"></i></a>
                 </div>
                 </div>
+            </div>
+
+            <div class="hidden">
                 <div class="project">
 
                     <div class="aligment-skill">
@@ -231,10 +256,10 @@
                 </div>
 
                 </div>
-                
-            </div>
+            </div>    
+
         </section>
-        <section class="contact-me aligment-sections " id="contact">
+        <section class="contact-me aligment-sections hidden " id="contact">
             <h1>Entre em <span class="get-theme">contato</span></h1>
 
             <form action="">
@@ -252,10 +277,9 @@
         </section>
     </main>
     
-    
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/themes.js"></script>
-    <script src="./assets/js/uppercase.js"></script>
+    <script src="./assets/js/scroll.js"></script>
 </body>
 
 </html>

@@ -35,6 +35,54 @@ html {
     color: var(--background-color-light);
 }
 
+/* ADICIONANDO TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    height: 30px;
+    background-color: var(--color-tema-03);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1;
+    left: -70%;
+    top: 5px;
+    margin-left: -120px; /* Centraliza a dica de ferramenta */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-theme .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    height: 40px;
+    background-color: var(--color-tema-03);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    font-weight: 400;
+    left: -50%;
+    margin-left: -15px; /* Centraliza a dica de ferramenta */
+    margin-top: 150px; /* Centraliza a dica de ferramenta */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 /* MIDIAS SOCIAIS */
 aside div figure {
     display: flex;
@@ -45,6 +93,7 @@ aside div figure {
     position: fixed;
     top: 750px;
     right: 10px;
+    z-index: 1000;
     background-color: rgba(164, 164, 164, 0.213);
 }
 
@@ -154,6 +203,7 @@ ul li.icon-menu {
     align-items: center;
     justify-content: center;
     transform: rotate(-45deg);
+    z-index: 1000;
 }
 
 .nav-theme .btn-colors,
@@ -180,9 +230,7 @@ span a {
     background-color: #b2f7fecb;
 }
 
-.nav-theme.open .btn-colors {
-    transform: rotate(0deg);
-}
+
 
 .nav-theme span a {
     text-decoration: none;
@@ -222,6 +270,7 @@ span a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 110vh;
 }
 
 .welcome h1 {
@@ -229,7 +278,7 @@ span a {
     font-size: 70px;
     max-width: 1000px;
     width: 100%;
-    margin-top: -100px;
+    margin-top: -280px;
 }
 
 .get-theme {
@@ -264,15 +313,17 @@ span a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 110vh;
 }
 
 .about-me h1 {
     font-size: 60px;
     margin-bottom: 10px;
+    margin-top: -20px;
 }
 
 .information {
-    height: 80%;
+    height: 70%;
     background-color: var(--background-color);
     width: 100%;
     max-width: 1150px;
@@ -383,6 +434,7 @@ p.phrase,
 .skills h1 {
     font-size: 60px;
     margin-bottom: 10px;
+    margin-top: -20px;
 }
 
 .skills {
@@ -391,6 +443,7 @@ p.phrase,
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 110vh;
 }
 
 .information-skill {
@@ -480,11 +533,13 @@ p.phrase,
     width: 100%;
     height: 140vh;
 }
-.myprojects h1{
+
+.myprojects h1 {
     font-size: 60px;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
 }
-.myprojects h2{
+
+.myprojects h2 {
     text-align: center;
 }
 
@@ -536,33 +591,39 @@ p.phrase,
 
 .grid-projects .project a i {
     font-size: 40px;
-    color: var(--background-color); 
+    color: var(--background-color);
     transition: all 300ms ease-in-out;
 }
 
-.skill-used img{
+.skill-used img {
     transition: all 300ms ease-in-out;
     height: 90px;
 }
-.skill-used img:hover{
-   transform: rotateY(360deg);
+
+.skill-used img:hover {
+    transform: rotateY(360deg);
 }
 
-.contact-me{
+/* SEÇÃO CONTATO */
+
+.contact-me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
 }
-.contact-me h1{
+
+.contact-me h1 {
     font-size: 60px;
     margin-bottom: 20px;
 }
-form{
+
+form {
     display: grid;
 }
-form label{
+
+form label {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 25px;
@@ -570,9 +631,11 @@ form label{
     font-weight: 400;
     color: var(--color-tema-03);
 }
-form label:hover{
+
+form label:hover {
     color: #a1fff2;
 }
+
 form input {
     width: 600px;
     height: 50px;
@@ -582,10 +645,13 @@ form input {
     border: 0;
     font-weight: 400;
 }
+
 form input:focus {
-    outline: none; /* Remove a borda padrão de foco (opcional) */
-      box-shadow: 0 0 20px var(--color-tema-03);
+    outline: none;
+    /* Remove a borda padrão de foco (opcional) */
+    box-shadow: 0 0 20px var(--color-tema-03);
 }
+
 form textarea {
     width: 600px;
     height: 300px;
@@ -595,12 +661,15 @@ form textarea {
     border: 0;
     font-weight: 400;
 }
-#name{
-        text-transform: capitalize;
+
+#name {
+    text-transform: capitalize;
 }
+
 form textarea:focus {
-    outline: none; /* Remove a borda padrão de foco (opcional) */
-      box-shadow: 0 0 20px var(--color-tema-03);
+    outline: none;
+    /* Remove a borda padrão de foco (opcional) */
+    box-shadow: 0 0 20px var(--color-tema-03);
 }
 
 form button {
@@ -623,4 +692,19 @@ form button {
 form button:hover {
     background-color: #a1fff2;
     color: #65a0ae;
+}
+
+/* EFEITO SCROLL */
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 2s;
+    transform: translateX(0%);
 }
