@@ -94,12 +94,10 @@ aside div figure img:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-tema-03);
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--background-second-color);
     width: 15px;
 }
 
@@ -924,7 +922,7 @@ p.phrase,
     width: 30px;
 }
 .information-skill {
-    height: 60%;
+    height: 250px;
     width: 80%;
     margin-left: 14%;
     max-width: 1250px;
@@ -1177,6 +1175,48 @@ form button {
     margin-top: 20px;
     margin-left: 6%;
 }
+
+/* MIDIAS */
+
+
+aside div figure {
+    max-width: 45px;
+    border-radius: 40px;
+    padding: 8px;
+    position: fixed;
+    top: 320px;
+    right: 10px;
+    z-index: 1000;
+}
+
+aside div figure img {
+    width: 24px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* TEMAS */
+
+.nav-theme {
+    position: fixed;
+    top: 130px;
+    right: 20px;
+}
+
+.nav-theme .btn-colors,
+span button {
+    height: 35px;
+    width: 35px;
+}
+
+.nav-theme .btn-colors {
+    font-size: 17px;
+}
+
+.nav-theme span button i {
+    font-size: 17px;
+}
+
 
 }
 
