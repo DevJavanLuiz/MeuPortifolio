@@ -34,6 +34,10 @@ main {
 body{
     overflow-x: hidden;
 }
+section{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 html {
     font-family: "Roboto", sans-serif;
