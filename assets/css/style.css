@@ -20,6 +20,7 @@
     box-sizing: border-box;
     transition: all 2s;
     -webkit-tap-highlight-color: transparent;
+    
 }
 
 main {
@@ -36,6 +37,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     color: var(--background-color-light);
+    overflow-x: hidden;
 }
 
 /* ADICIONANDO TOOLTIP */
@@ -1048,15 +1050,6 @@ p.phrase,
     border-radius: 20px;
     margin-right: 20px;
 }
-/* .img-breve{
-    background-image: url(/assets/img/breve.jpg);
-    width: 100vw;
-    text-align: center;
-    background-position: center;
-    cursor: pointer;
-    border-radius: 20px;
-    background-size: cover;
-} */
 .breve {
     background-image: url(/assets/img/breve.jpg);
     text-align: center;
@@ -1119,6 +1112,7 @@ p.phrase,
 
 
 /* CONTATO */
+
 
 .contact-me {
     display: flex;
