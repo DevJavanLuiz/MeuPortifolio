@@ -28,8 +28,12 @@ main {
     height: 100%;
     width: 100vw;
     transition: all 300ms;
+    overflow-y: hidden;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 html {
     font-family: "Roboto", sans-serif;
@@ -37,7 +41,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     color: var(--background-color-light);
-    overflow-x: hidden;
+    
 }
 
 /* ADICIONANDO TOOLTIP */
