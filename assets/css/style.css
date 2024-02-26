@@ -519,135 +519,71 @@ p.phrase,
 
 
 /* SEÇÃO PROJETOS */
-
-.myprojects {
+.myprojects{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-}
-
-.myprojects h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-
-
-.grid-projects {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-.project {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 30px;
-    height: 300px;
-    display: flex;
-    background-color: var(--background-second-color);
-    padding: 10px;
-    border: 1px solid var(--color-tema-03);
-    /* box-shadow: 0 0 5px var(--color-tema-03) */
-}
-.img-linktree{
-    background-image: url(/assets/img/siteSabrina.png);
-    width: 80vw;
-    background-position: center;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-right: 20px;
-    background-size: cover;
-}
-.img-calculadora{
-    background-image: url(/assets/img/cronometo.png);
-    width: 80vw;
-    background-position: center;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-right: 20px;
-    background-size: cover;
-}
-.img-cronometro{
-    background-image: url(/assets/img/cronometro\ real.png);
-    width: 80vw;
-    background-position: center;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-right: 20px;
-    background-size: cover;
-}
-.img-breve{
-    background-image: url(/assets/img/breve.jpg);
-    width: 100vw;
-    text-align: center;
-    background-position: center;
-    cursor: pointer;
-    border-radius: 20px;
-    background-size: cover;
-}
-
-.grid-projects .project p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 20px;
-}
-
-.grid-projects .project img {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-.aligment-skill {
-    display: grid;
-    flex-direction: column;
-}
-
-
- .aligment a i.bi.bi-github {
-    font-size: 70px;
-    margin-left: 25px;
-    color: var(--background-color-light);
-}
-.aligment{
-    opacity: 0;
-    transition: all 600ms;
-    border-radius: 20px;
-}
-.aligment:hover{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
- .aligment a i.bi.bi-play-fill {
-    font-size: 90px;
-    margin-left: 25px;
-    color: var(--background-color-light);
-}
-.aligment {
-    display: flex;
     justify-content: center;
-    align-items: center;
+}
+.slide-container{
+    max-width: 1120px;
     width: 100%;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 300px;
+    padding: 3px;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 100%;
+    width: 100%;
+    background-color: var(--color-tema-03);
+    border-radius: 25px 25px 0px 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0;
+    background-color: var(--color-tema-03);
+    bottom: -40px;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: var(--background-second-color);
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    border-radius: 25px;
+    background-color: var(--background-second-color);
+}
+.slide-content{
+    margin: 0 40px;
 }
 
-.skill-used{
-    text-align: center;
-}
 
-.skill-used img {
-    transition: all 300ms ease-in-out;
-}
-
-.skill-used img:hover {
-    transform: rotateY(360deg);
-}
 
 /* SEÇÃO CONTATO */
 
@@ -761,26 +697,33 @@ form button:hover {
 @media only screen and (max-width: 600px){
 
     /* SIDE BAR */
-    .nav-side {
-        width: 45px;
-        height: 100%;
+     .nav-side {
+        background-color: var(--background-second-color);
+        width: 50px;
+        height: 100vh;
+        padding-top: 30px;
     }
     
     .nav-side.expand {
-        width: 230px;
+        width: 210px;
     }
     
     .btn-expand img {
-        width: 35px;
-        margin-left: 5px;
-        margin-bottom: 20px;
-    }
-
-    ul li.icon-menu a .icon i {
-        font-size: 20px;
+        width: 30px;
         margin-left: 10px;
+        margin-bottom: 10px;
     }
     
+    ul li.icon-menu a {
+        font-size: 15px;
+        padding: 10px 4%;
+        margin-bottom: 15px;
+    }
+    
+    ul li.icon-menu a .icon i {
+        font-size: 20px;
+        margin-left: 12px;
+    }
 
 /* WELCOMO */
 
@@ -817,33 +760,34 @@ form button:hover {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    padding: 50px 0px 25px 0px;
 }
 
 .about-me h1 {
     font-size: 30px;
     margin-left: 15%;
-    margin-top: -70px;
+    margin-top: -15px;
     margin-bottom: 10px;
 }
 
 .information {
-    height: 80%;
+    height: 95%;
     width: 80%;
     margin-left: 14%;
     max-width: 100%;
     display: grid;
     justify-content: center;
     align-items: start;
-    margin-top: 0px;
+    margin-top: -0px;
 }
 
 .my-profile {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin-left: 10%;
     margin-bottom: 100px;
-    margin-top: 20px;
-    border-radius: 28px;
+    border-radius: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .img-profile {
@@ -887,7 +831,8 @@ form button:hover {
     width: 100%;
     max-width: 110px;
     font-size: 12px;
-    padding: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
 }
 
 
