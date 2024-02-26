@@ -524,6 +524,11 @@ p.phrase,
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.myprojects h1{ 
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 .slide-container{
     max-width: 1120px;
@@ -531,9 +536,9 @@ p.phrase,
 }
 .card-image{
     position: relative;
-    height: 150px;
-    width: 300px;
-    padding: 3px;
+    height: 160px;
+    width: 250px;
+    z-index: 200;
 }
 .image-content,
 .card-content{
@@ -553,36 +558,76 @@ p.phrase,
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--color-tema-03);
-    border-radius: 25px 25px 0px 25px;
+    border: 3px solid var(--color-tema-03);
+    border-radius: 25px;
 }
-.overlay::before,
-.overlay::after{
-    content: '';
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 0;
-    background-color: var(--color-tema-03);
-    bottom: -40px;
-}
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: var(--background-second-color);
-}
+
 .card-image .card-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 25px;
 }
 .card{
     border-radius: 25px;
     background-color: var(--background-second-color);
 }
 .slide-content{
-    margin: 0 40px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.113);
+    border-radius: 40px;
+}
+.aligment-acess { 
+    display: flex;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+    margin-top: -163px;
+    justify-content: center;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 25px;
+}
+.aligment-acess:hover {
+    background-color: rgba(0, 0, 0, 0.339); 
+    opacity: 1;
+
+}
+.aligment-acess:focus {
+    background-color: rgba(0, 0, 0, 0.339); 
+    opacity: 1;
+
+}
+.aligment-acess img { 
+    cursor: pointer;
+    margin-left: 46px;
+    margin-right: 46px;
+}
+.aligment-acess img:hover { 
+    transform: rotateY(360deg);
 }
 
+.aligment-acess img:focus { 
+    transform: rotateY(360deg);
+}
+
+.skill-util img:hover{
+    transform: rotateY(360deg);
+}
+.skill-util img{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.skill-util{
+    margin-top: 10px;
+}
+.description{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+}
 
 
 /* SEÇÃO CONTATO */
