@@ -632,7 +632,7 @@ p.phrase,
 
 .swiper {
     margin: 100px auto;
-    width: 450px;
+    width:680px;
     height: 600px;
   }
 
@@ -817,12 +817,12 @@ form button:hover {
 .about-me h1 {
     font-size: 40px;
     margin-left: 15%;
-    margin-top: -30%;
-    margin-bottom: 120px;
+    margin-top: -150px;
+    margin-bottom: 180px;
 }
 
 .information {
-    height: 75%;
+    height: 65vh;
     width: 80%;
     margin-left: 14%;
     max-width: 100%;
