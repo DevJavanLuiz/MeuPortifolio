@@ -928,13 +928,13 @@ p.phrase,
     width: 30px;
 }
 .information-skill {
-    height: 250px;
+    height: 230px;
     max-height: 100%;
     width: 80%;
     margin-left: 14%;
     margin-top: -14%;
     max-width: 100%;
-    padding: 30px 0px 30px 20px;
+    padding: 25px 0px 25px 20px;
     font-size: 0px;
     display: grid;
     flex-direction: column;
@@ -972,16 +972,16 @@ p.phrase,
     display: grid;
     flex-direction: column;
     grid-template-columns: 1fr ;
-    margin-top: 0px;
-    padding: 5px 20px;
+    margin-top: 20px;
+    padding: 0px 15px;
     margin-left: 20%;
 }
 
 .text-skills p {
     max-width: 400px;
-    min-width: 200px;
+    min-width: 230px;
     font-size: 10px;
-    margin-left: 30px;
+    margin-left: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -1121,7 +1121,7 @@ aside div figure img {
 .nav-theme {
     position: fixed;
     top: 130px;
-    right: 20px;
+    right: 13px;
 }
 
 .nav-theme .btn-colors,
@@ -1136,14 +1136,6 @@ span button {
 
 .nav-theme span button i {
     font-size: 17px;
-}
-
-
-.slide-content{
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.113);
-    border-radius: 40px;
-    max-width: 400px;
 }
 
 }
