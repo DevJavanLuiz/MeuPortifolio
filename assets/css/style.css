@@ -533,6 +533,7 @@ p.phrase,
 .slide-container{
     max-width: 1120px;
     width: 100%;
+    border-radius: 25px;
 }
 .card-image{
     position: relative;
@@ -629,6 +630,11 @@ p.phrase,
     font-weight: 400;
 }
 
+.swiper {
+    margin: 100px auto;
+    width: 450px;
+    height: 600px;
+  }
 
 /* SEÇÃO CONTATO */
 
@@ -739,7 +745,7 @@ form button:hover {
 
 /* RESPONSIVO */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 767px){
 
     /* SIDE BAR */
      .nav-side {
@@ -794,7 +800,7 @@ form button:hover {
     max-width: 100%;
     max-height: 100%;
     margin-left: 0px;
-    top: 380px;
+    top: 70%;
 }
 
 /* SOBRE MIM */
@@ -804,26 +810,26 @@ form button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    padding: 50px 0px 25px 0px;
+    min-height: 100vh;
+    padding: 0px;
 }
 
 .about-me h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 15%;
-    margin-top: -15px;
-    margin-bottom: 10px;
+    margin-top: -30%;
+    margin-bottom: 120px;
 }
 
 .information {
-    height: 95%;
+    height: 75%;
     width: 80%;
     margin-left: 14%;
     max-width: 100%;
     display: grid;
     justify-content: center;
     align-items: start;
-    margin-top: -0px;
+    margin-top: -25%;
 }
 
 .my-profile {
@@ -903,10 +909,10 @@ p.phrase,
 
 /* HABILIDADES */
 .skills h1 {
-    font-size: 30px;
-    margin-left: 20%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-left: 15%;
+    margin-top: 0px;
+    margin-bottom: 20%;
 }
 
 .skills {
@@ -915,7 +921,7 @@ p.phrase,
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
 }
 
 .information-skill img {
@@ -926,6 +932,7 @@ p.phrase,
     max-height: 100%;
     width: 80%;
     margin-left: 14%;
+    margin-top: -14%;
     max-width: 100%;
     padding: 30px 0px 30px 20px;
     font-size: 0px;
@@ -985,120 +992,47 @@ p.phrase,
 
 /* PROJETOS */
 
-.myprojects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
-.myprojects h1 {
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    max-width: 180px;
-}
-
-
-
-.grid-projects {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr ;
-    gap: 20px;
-    margin-left: 5%;
-}
-
-.project {
-    width: 65vw;
-    max-width: 350px;
-    border-radius: 30px;
-    height: 55vh;
-    max-height: 100%;
-    display: grid;
-    justify-content: center;
-    text-align: start;
-    padding: 10px;
-}
-.grid-projects .project img {
-    max-width: 80px;
-    width: 100%;
-    text-align: center;
-    margin-top: -10px;
-    padding: 20px;
-}
-.img-linktree{
-    width: 100%;
-    background-position: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    margin-right: 20px;
-}
-.img-calculadora{
-    width: 100%;
-    background-position: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    margin-right: 20px;
-}
-.img-cronometro{
-    width: 100%;
-    background-position: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    margin-right: 20px;
-}
-
-.grid-projects .project p {
-    font-size: 13px;
-    margin-top: 10px;
-    padding-left: 5px;
-}
-
-
-.aligment-skill {
-    display: grid;
-    flex-direction: column;
-}
-
-
- .aligment a i.bi.bi-github {
+.myprojects h1{ 
     font-size: 35px;
-    margin-left: 25px;
-    color: var(--background-color-light);
+    margin-top: 25%;
+    margin-left: 5%;
+    margin-bottom: 0px;
 }
-.aligment{
-    opacity: 0.2;
-    border: 0;
+.slide-container{
+    max-width: 340px;
+    margin-top: 20px;
 }
-
-.aligment:focus{
-    opacity: 1;
+.card-image{
+    width: 150px;
 }
-
- .aligment a i.bi.bi-play-fill {
-    font-size: 50px;
-}
-.aligment {
+.image-content,
+.card-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 10px 14px;
+}
+
+.card-wrapper{
+    margin-left: -20px;
+}
+
+.card-image .card-img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
-
-.skill-used{
-    text-align: center;
+.card{
+    border-radius: 25px;
+    background-color: var(--background-second-color);
 }
-
-.skill-used img {
-    transition: all 300ms ease-in-out;
-}
-
-.skill-used img:hover {
-    transform: rotateY(360deg);
+.slide-content{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.113);
+    border-radius: 40px;
+    margin-left: 14%;
+    width: 340px;
 }
 
 
@@ -1110,14 +1044,14 @@ p.phrase,
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    min-height: 100vh;
 }
 
 .contact-me h1 {
     font-size: 40px;
     max-width: 200px;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: -90px;
 }
 
 form {
@@ -1158,7 +1092,7 @@ form button {
     max-width: 300px;
     font-size: 15px;
     padding: 7px;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 6%;
 }
 
@@ -1204,6 +1138,12 @@ span button {
 }
 
 
+.slide-content{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.113);
+    border-radius: 40px;
+    max-width: 400px;
+}
 
 }
 
