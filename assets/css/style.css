@@ -1035,6 +1035,11 @@ p.phrase,
     margin-left: 14%;
     width: 340px;
 }
+.aligment-acess img { 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 
 /* CONTATO */
@@ -1139,4 +1144,3 @@ span button {
 }
 
 }
-
