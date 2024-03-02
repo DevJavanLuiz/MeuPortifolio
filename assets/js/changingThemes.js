@@ -12,6 +12,8 @@ const backgroundSecondLigth = document.querySelectorAll('.second-ligth');
 
 const imagem = document.getElementById('expand');
 
+const colorBtnTheme = document.querySelectorAll('.background-btn-theme')
+
 function themePurple() {
   sideBarBorder.style.borderRight = '2px solid #7209b7'
 

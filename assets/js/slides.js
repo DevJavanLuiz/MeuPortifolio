@@ -4,10 +4,10 @@ var swiper = new Swiper(".slide-content", {
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: [0, 0, -400],
+      translate: [0, 0, -800],
     },
     next: {
-      translate: ["100%", 0, 0],
+      translate: ["100%", 0, 370],
     },
   },
   pagination: {
