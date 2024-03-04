@@ -45,6 +45,8 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     color: var(--background-color-light);
+    color: #212529;
+    color:rgb(240, 235, 216);
 
 }
 
@@ -70,7 +72,6 @@ html {
     left: -70%;
     top: 5px;
     margin-left: -120px;
-    /* Centraliza a dica de ferramenta */
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -761,6 +762,7 @@ form button:hover {
 }
 /* RESPONSIVO */
 
+
 @media only screen and (max-width: 767px) {
 
     /* SIDE BAR */
@@ -1115,7 +1117,7 @@ form button:hover {
         width: 100%;
         max-width: 300px;
         font-size: 15px;
-        padding: 7px;
+        padding: 9px;
         margin-top: 80px;
         margin-left: 6%;
     }
@@ -1162,7 +1164,7 @@ form button:hover {
     }
 
     /* Swiper */
-    .swiper-pagination {
+    .swiper-pagination.btn {
         position: absolute;
         text-align: center;
         transition: 300ms opacity;
@@ -1170,11 +1172,64 @@ form button:hover {
         z-index: 10;
         margin-bottom: 50px;
         padding: 10px 20px 10px 20px;
-        max-width: 0%;
-        margin-left:39%;
+        max-width: 35%;
+        margin-left:35%;
         border-radius: 40px;
         background-color: rgb(0, 234, 255);
         transition: all 800ms ease;
       }
 
+}
+
+@media only screen and (max-width: 350px) and (min-width: 315px) {
+
+/* SOBRE MIM */
+
+    .about-me h1 {
+        font-size: 28px;
+        margin-top: -170px;
+        margin-bottom: 20px;
+    }
+
+    .information-about-me h1 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        margin-left: -5px;
+    }
+    
+    .information-about-me h2 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .information-about-me p {
+        font-size: 9px;
+    }
+    
+    .information-about-me footer {
+        margin-top: 5px;
+    }
+    
+    .information-about-me footer .btn {
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    
+    
+    p.phrase,
+    .phrase .get-theme {
+        margin-top: 5px;
+    }
+    
+    .information-about-me ul {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .information-about-me li {
+        font-size: 9px;
+    }
+
+    /* HABILIDADES */
 }
