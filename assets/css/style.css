@@ -873,6 +873,7 @@ form button:hover {
         font-size: 14px;
         margin-top: 20px;
         margin-bottom: 4px;
+        margin-left: -3px;
         text-align: center;
     }
     
@@ -1010,7 +1011,7 @@ form button:hover {
     
     .myprojects h1 {
         font-size: 35px;
-        margin-top: 25%;
+        margin-top: 0;
         margin-left: 5%;
         margin-bottom: 0px;
     }
@@ -1232,4 +1233,199 @@ form button:hover {
     }
 
     /* HABILIDADES */
+
+    .skills h1 {
+        font-size: 25px;
+        margin-left: 14%;
+        margin-top: 0px;
+        margin-bottom: 20%;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .information-skill img {
+        width: 23px;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .information-skill {
+        height: 150px;
+        max-height: 100%;
+        width: 80%;
+        margin-left: 14%;
+        margin-top: -14%;
+        max-width: 100%;
+        padding: 25px 0px 25px 20px;
+        font-size: 0px;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-bar {
+        height: 0px;
+        max-width: 0px;
+    }
+    
+    .skill-per {
+        height: 5px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+    }
+    
+    .skill-per::before {
+        border-radius: 50px;
+        font-size: 7px;
+        padding: 3px;
+        top: -20px;
+        right: -11.5px;
+    }
+
+    .skill-per::after {
+        width: 5px;
+        height: 5px;
+        top: -7px;
+        right: -2px;
+    }
+    
+    .text-skills {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        padding: 0px 15px;
+        margin-left: 20%;
+    }
+    
+    .text-skills p {
+        max-width: 280px;
+        min-width: 0px;
+        font-size: 8px;
+        margin-left: 5%;
+    }
+    
+    .text-skills img {
+        width: 20px;
+        margin-left: -25px;
+    }
+
+    
+    /* PROJETOS */
+
+    .myprojects h1 {
+        font-size: 25px;
+        margin-left: 20%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .slide-container {
+        border-radius: 0px;
+    }
+    
+    .card-image {
+        position: relative;
+        height: 80px;
+        width: 180px;
+    }
+    
+    .image-content,
+    .card-content {
+        padding: 10px 14px;
+        
+    }
+    
+    .image-content {
+        padding: 15px 0;
+    }
+
+    .slide-content {
+        height: 400px;
+        margin-top: -20px;
+    }
+    
+    .aligment-acess {
+        height: 80px;
+        margin-top: -83px;
+    }
+
+    .aligment-acess img {
+        cursor: pointer;
+        margin-left: 26px;
+        margin-right: 26px;
+        max-width: 38px;
+    }
+    
+    
+    .skill-util img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .skill-util {
+        margin-top: 30px;
+    }
+    
+    .description {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .swiper {
+        width: 400px;
+        height: 600px;
+    }
+    
+        /* CONTATO */
+
+        .contact-me h1 {
+            font-size: 25px;
+            max-width: 200px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-left: 16%;
+        }
+        
+        form label {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+    
+        form input {
+            width: 220px;
+            height: 40px;
+            margin-left: 10%;
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    
+        form textarea {
+            padding: 25px;
+            width: 220px;
+            margin-left: 10%;
+            border-radius: 15px;
+            height: 120px;
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    
+        form button {
+            width: 100%;
+            max-width: 100px;
+            font-size: 12px;
+            padding: 7px;
+            margin-top: 30px;
+            margin-left: 35%;
+        }
 }
