@@ -1428,4 +1428,681 @@ form button:hover {
             margin-top: 30px;
             margin-left: 35%;
         }
+    }
+
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    /* SIDE BAR */
+    .nav-side {
+        background-color: var(--background-second-color);
+        width: 50px;
+        height: 100vh;
+        padding-top: 30px;
+    }
+
+    .nav-side.expand {
+        width: 250px;
+    }
+    
+    .btn-expand img {
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    ul li.icon-menu a {
+        font-size: 15px;
+        padding: 10px 4%;
+        margin-bottom: 15px;
+    }
+
+    ul li.icon-menu a .icon i {
+        font-size: 20px;
+        margin-left: 12px;
+    }
+    
+    /* WELCOMO */
+    
+    .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .welcome h1 {
+        font-size: 50px;
+        max-width: 800px;
+        margin-left: 150px;
+        margin-top: 0px;
+    }
+    
+    .next-page i {
+        font-size: 35px;
+        position: absolute;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 0px;
+        top: 70%;
+    }
+    
+    /* SOBRE MIM */
+    
+    .about-me h1 {
+        font-size: 50px;
+        margin-left: 0;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    } 
+    .information {
+        height: 70%;
+        width: 70%;
+        max-width: 1150px;
+        display: flex;
+    }
+    
+    .information-about-me h1 {
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 105px;
+    }
+    
+    .information-about-me h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .information-about-me p {
+        font-size: 15px;
+    }
+    
+    .information-about-me footer .btn {
+        font-size: 18px;
+        position: absolute;
+        top: 490px;
+        padding: 9px;
+    }
+    
+    p.phrase,
+    .phrase .get-theme {
+        font-size: 12px;
+    }
+    
+    .information-about-me ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .information-about-me li {
+        margin-top: 5px;
+    }
+    
+    .information-about-me .leisure {
+        font-size: 12px;
+    }
+
+    /* HABILIDADES */
+
+    .skills{
+        min-height: 110vh;
+    }
+    .skills h1 {
+        font-size: 50px;
+        margin-left: 2%;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+    
+    .information-skill img {
+        width: 45px;
+    }
+
+    .information-skill {
+        height: 285px;
+        width: 50%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 20px 0px 35px 50px;
+    }
+
+    .skill-bar {
+        height: 0px;
+        max-width: 0px;
+    }
+    
+    .skill-per {
+        height: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    
+    .skill-per::before {
+        border-radius: 20px;
+        font-size: 10px;
+        padding: 5px;
+        top: -26px;
+        right: -15.8px;
+    }
+
+    .skill-per::after {
+        width: 10px;
+        height: 10px;
+        top: -9px;
+        right: -2px;
+    }
+    
+    .text-skills {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 0px;
+        padding: 0px 15px;
+        margin-left: 50px;
+    }
+    
+    .text-skills p {
+        max-width: 280px;
+        min-width: 0px;
+        font-size: 12px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .text-skills img {
+        width: 35px;
+        margin-left: 0px;
+    }
+
+    /* PROJETOS */
+    
+    .myprojects {
+        min-height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .myprojects h1 {
+        font-size: 50px;
+        margin-top: -80px;
+        margin-bottom: 10px;
+    }
+    
+    .slide-container {
+        max-width: 1120px;
+        width: 100%;
+        border-radius: 25px;
+    }
+    
+    .card-image {
+        position: relative;
+        height: 160px;
+        width: 250px;
+        z-index: 200;
+    }
+    
+    .image-content,
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 14px;
+    }
+    
+    .image-content {
+        row-gap: 5px;
+        position: relative;
+        padding: 25px 0;
+    }
+    
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border: 3px solid var(--color-tema-03);
+        border-radius: 25px;
+    }
+    
+    .card-image .card-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    
+    }
+    
+    .card {
+        border-radius: 25px;
+        background-color: var(--background-second-color);
+        transform: scale(0.2);
+    }
+    
+    .slide-content {
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.113);
+        border-radius: 40px;
+    }
+    
+    .aligment-acess {
+        display: flex;
+        width: 100%;
+        height: 160px;
+        align-items: center;
+        margin-top: -163px;
+        justify-content: center;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        position: absolute;
+        z-index: 1000;
+        border-radius: 25px;
+    }
+    
+    .aligment-acess:hover {
+        background-color: rgba(0, 0, 0, 0.339);
+        opacity: 1;
+    
+    }
+    
+    .aligment-acess:focus {
+        background-color: rgba(0, 0, 0, 0.339);
+        opacity: 1;
+    
+    }
+    
+    .aligment-acess img {
+        cursor: pointer;
+        margin-left: 46px;
+        margin-right: 46px;
+    }
+    
+    .aligment-acess img:hover {
+        transform: rotateY(360deg);
+    }
+    
+    .aligment-acess img:focus {
+        transform: rotateY(360deg);
+    }
+    
+    .skill-util img:hover {
+        transform: rotateY(360deg);
+    }
+    
+    .skill-util img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .skill-util {
+        margin-top: 10px;
+    }
+    
+    .description {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .swiper {
+        width: 600px;
+        height: 490px;
+    }
+    
+    /* CONTATO */
+    
+    .contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 110vh;
+    }
+    
+    .contact-me h1 {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+    
+    form label {
+        margin-top: 10px;
+        margin-bottom:10px;
+        font-size: 15px;
+    }
+    
+    
+    form input {
+        width: 400px;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 17px;
+    }
+    
+    
+    form textarea {
+        width: 400px;
+        height: 200px;
+        font-size: 16px;
+    }
+    
+    form button {
+        width: 100%;
+        max-width: 180px;
+        font-size: 17px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    /* MIDIAS */
+    
+    
+    aside div figure {
+        max-width: 45px;
+        border-radius: 40px;
+        padding: 8px;
+        position: fixed;
+        top: 320px;
+        right: 10px;
+        z-index: 1000;
+    }
+    
+    aside div figure img {
+        width: 24px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    
+    /* TEMAS */
+    
+    .nav-theme {
+        position: fixed;
+        top: 130px;
+        right: 13px;
+    }
+    
+    .nav-theme .btn-colors,
+    span button {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .nav-theme .btn-colors {
+        font-size: 17px;
+    }
+    
+    .nav-theme span button i {
+        font-size: 17px;
+    }
+
+    /* Swiper */
+    .swiper-pagination.btn {
+        position: absolute;
+        text-align: center;
+        transition: 300ms opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+        margin-bottom: 0px;
+        padding: 7px;
+        max-width: 130px;
+        margin-left:39%;
+        border-radius: 40px;
+        background-color: rgb(0, 234, 255);
+        transition: all 800ms ease;
+      }
+
+}
+
+@media only screen and (max-width: 370px) and (min-width: 300px) {
+
+/* SOBRE MIM */
+
+    .about-me h1 {
+        font-size: 28px;
+        margin-top: -80px;
+        margin-bottom: 20px;
+    }
+
+    .information-about-me h1 {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        margin-left: -5px;
+    }
+    
+    .information-about-me h2 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .information-about-me p {
+        font-size: 9px;
+    }
+    
+    .information-about-me footer {
+        margin-top: 5px;
+    }
+    
+    .information-about-me footer .btn {
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    
+    
+    p.phrase,
+    .phrase .get-theme {
+        margin-top: 5px;
+    }
+    
+    .information-about-me ul {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .information-about-me li {
+        font-size: 9px;
+    }
+
+    /* HABILIDADES */
+
+    .skills h1 {
+        font-size: 25px;
+        margin-left: 14%;
+        margin-top: 0px;
+        margin-bottom: 20%;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .information-skill img {
+        width: 23px;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .information-skill {
+        height: 150px;
+        max-height: 100%;
+        width: 80%;
+        margin-left: 14%;
+        margin-top: -14%;
+        max-width: 100%;
+        padding: 25px 0px 25px 20px;
+        font-size: 0px;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-bar {
+        height: 0px;
+        max-width: 0px;
+    }
+    
+    .skill-per {
+        height: 5px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+    }
+    
+    .skill-per::before {
+        border-radius: 50px;
+        font-size: 7px;
+        padding: 3px;
+        top: -20px;
+        right: -11.5px;
+    }
+
+    .skill-per::after {
+        width: 5px;
+        height: 5px;
+        top: -7px;
+        right: -2px;
+    }
+    
+    .text-skills {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        padding: 0px 15px;
+        margin-left: 20%;
+    }
+    
+    .text-skills p {
+        max-width: 280px;
+        min-width: 0px;
+        font-size: 8px;
+        margin-left: 5%;
+    }
+    
+    .text-skills img {
+        width: 20px;
+        margin-left: -25px;
+    }
+
+    
+    /* PROJETOS */
+
+    .myprojects h1 {
+        font-size: 25px;
+        margin-left: 20%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .slide-container {
+        border-radius: 0px;
+    }
+    
+    .card-image {
+        position: relative;
+        height: 80px;
+        width: 180px;
+    }
+    
+    .image-content,
+    .card-content {
+        padding: 10px 14px;
+        
+    }
+    
+    .image-content {
+        padding: 15px 0;
+    }
+
+    .slide-content {
+        height: 400px;
+        margin-top: -20px;
+    }
+    
+    .aligment-acess {
+        height: 80px;
+        margin-top: -83px;
+    }
+
+    .aligment-acess img {
+        cursor: pointer;
+        margin-left: 26px;
+        margin-right: 26px;
+        max-width: 38px;
+    }
+    
+    
+    .skill-util img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .skill-util {
+        margin-top: 30px;
+    }
+    
+    .description {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    .swiper {
+        width: 400px;
+        height: 600px;
+    }
+    
+        /* CONTATO */
+
+        .contact-me h1 {
+            font-size: 25px;
+            max-width: 200px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            margin-left: 16%;
+        }
+        
+        form label {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+    
+        form input {
+            width: 220px;
+            height: 40px;
+            margin-left: 10%;
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    
+        form textarea {
+            padding: 25px;
+            width: 220px;
+            margin-left: 10%;
+            border-radius: 15px;
+            height: 120px;
+            font-size: 10px;
+            padding-left: 10px;
+        }
+    
+        form button {
+            width: 100%;
+            max-width: 100px;
+            font-size: 12px;
+            padding: 7px;
+            margin-top: 30px;
+            margin-left: 35%;
+        }
 }
