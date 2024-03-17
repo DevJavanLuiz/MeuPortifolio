@@ -339,7 +339,7 @@
         <section class="contact-me aligment-sections hidden background-morning" id="contact">
             <h1 class="text-black">Entre em <span class="get-theme">contato</span></h1>
 
-            <form action="">
+            <form action="https://formsubmit.co/devjavanluiz@gmail.com" method="POST">
                 <label for="name"><span class="get-theme">Nome: </span></label>
                 <input type="text" required placeholder="Ex: Seu Nome" name="email" id="name">
 
@@ -350,6 +350,10 @@
                 <textarea required name="assunto" placeholder="Fale sobre o que desejar..." maxlength="470"
                     id="assunto"></textarea>
                 <button type="submit" class="btn">Enviar</button>
+
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
             </form>
 
         </section>
