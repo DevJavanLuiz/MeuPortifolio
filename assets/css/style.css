@@ -875,7 +875,7 @@ form button:hover {
     
     .img-profile {
         width: 50%;
-        height: 80%;
+        height: 100%;
     }
 
     .information-about-me {
@@ -1966,6 +1966,7 @@ form button:hover {
 
     .my-profile {
         width: 100%;
+        margin-top: 20px;
         margin-bottom: 100px;
         border-radius: 0px;
         border-top-left-radius: 50px;
