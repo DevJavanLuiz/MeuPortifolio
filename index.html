@@ -339,23 +339,21 @@
         <section class="contact-me aligment-sections hidden background-morning" id="contact">
             <h1 class="text-black">Entre em <span class="get-theme">contato</span></h1>
 
-            <form action="https://formsubmit.co/devjavanluiz@gmail.com" method="POST" class="formulario">
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="formulario">
+                <input type="hidden" name="accessKey" value="47013a09-ea68-4740-9c65-0facc21b5ec3">
+                <input type="hidden" name="redirectTo" value="https://pag-agradecimento.vercel.app/">
+                
                 <label for="name"><span class="get-theme">Nome: </span></label>
-                <input type="text" required placeholder="Ex: Seu Nome" name="email" id="name">
+                <input type="text" required placeholder="Ex: Seu Nome" name="name" id="name">
 
                 <label for="email"><span class="get-theme">E-mail: </span></label>
                 <input type="email" required placeholder="Ex: seuemail@gmail.com" name="email" id="email">
 
                 <label for="assunto"><span class="get-theme">Descrição: </span></label>
-                <textarea required name="assunto" placeholder="DIgite sua mensagem..." maxlength="470"
+                <textarea required name="message" placeholder="DIgite sua mensagem..." maxlength="470"
                     id="assunto"></textarea>
                 <button type="submit" class="btn">Enviar</button>
 
-                <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_next" value="https://pag-agradecimento.vercel.app/">
-                
             </form>
 
         </section>
