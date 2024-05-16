@@ -18,5 +18,6 @@ li.forEach((item)=>
 
 btnExpand.addEventListener('click', function(e){
     navBar.classList.toggle('expand');
+    
 
 })
